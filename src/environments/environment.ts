@@ -19,7 +19,8 @@ export const environment = {
   // For connecting to others servers running elsewhere update the base API URL
   baseApiUrls:
     loadedEnv.fineractApiUrls ||
-    'https://sandbox.mifos.community,https://demo.mifos.community,https://localhost:8443,' + window.location.origin,
+    'https://sandbox.mifos.community,https://demo.mifos.community,https://localhost:8443,https://mifos-sandbox-api.aiyo.my.id,' +
+      window.location.origin,
   // For connecting to server running elsewhere set the base API URL
   baseApiUrl:
     loadedEnv.fineractApiUrl ||
@@ -41,7 +42,7 @@ export const environment = {
   },
   defaultLanguage: loadedEnv.defaultLanguage || 'en-US',
   supportedLanguages:
-    loadedEnv.supportedLanguages || 'cs-CS,de-DE,en-US,es-MX,fr-FR,it-IT,ko-KO,lt-LT,lv-LV,ne-NE,pt-PT,sw-SW',
+    loadedEnv.supportedLanguages || 'cs-CS,de-DE,en-US,es-MX,fr-FR,it-IT,ko-KO,lt-LT,lv-LV,ne-NE,pt-PT,sw-SW,id-ID',
   preloadClients: loadedEnv['preloadClients'] || true,
 
   defaultCharDelimiter: loadedEnv.defaultCharDelimiter || ',',
